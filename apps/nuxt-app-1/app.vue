@@ -10,8 +10,8 @@
     <!-- <NuxtWelcome /> -->
     <HelloWorld />
 
-    <div class="p-10">
-      <!-- <Input v-model="amount"
+    <!-- <div class="p-10">
+       <Input v-model="amount"
              label="Amount"
              icon="mdi:dollar"
              helpText="Enter dollar value without decimals."
@@ -19,8 +19,8 @@
       <template #trailing>
         AUD
       </template>
-      </Input> -->
-    </div>
+      </Input> 
+    </div> -->
 
     <NuxtPage />
 
@@ -42,7 +42,7 @@ const validationRules = {
 // GRAPHQL QUERY
 
 const query = gql`
-  query freeting {
+  query greeting {
     hello
   }
 `

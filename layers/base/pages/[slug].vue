@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="h-screen">
         {{ route.params }}
 
         <component :is="componentName" />
