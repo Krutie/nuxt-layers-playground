@@ -4,6 +4,8 @@ const { myLayer } = useAppConfig()
 
 <template>
   <div class="bg-primary-100">
-    <h1 class="text-3xl font-bold p-4 text-primary-500"> {{ myLayer.name }}</h1>
+    <h1 class="text-3xl font-bold p-4 text-primary-500"  title="heading 1"> 
+      {{ myLayer.name }}
+    </h1>
   </div>
 </template>

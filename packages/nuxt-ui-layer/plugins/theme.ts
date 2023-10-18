@@ -19,16 +19,13 @@ const individualPalette = (themePalette: ThemePalette) => {
 }
 
 export default defineNuxtPlugin(nuxtApp => {
-
     const theme = useAppConfig()?.myLayer?.theme
-
     const style = individualPalette(theme)
-
     if (style) {
         useHead({
             style: [
                 {
-                    children: `:root, body { ${style} }`
+                    children: `:root, body { ${style}}`
                 }
             ]
         })
