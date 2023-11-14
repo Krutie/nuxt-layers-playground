@@ -14,7 +14,7 @@ const individualPalette = (themePalette: ThemePalette) => {
     if (themePalette) {
         return Object.entries(themePalette).map(([key, value]) => {
             return paletteToStyle(key as Level, value)
-        })
+        }).join(`;\r\n`)
     }
 }
 
